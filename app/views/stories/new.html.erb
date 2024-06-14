@@ -1,0 +1,16 @@
+<%= form_for @story do |f| %>
+  <div>
+    <p>
+    <%= f.label :name %>
+      <%= f.text_field :name %>
+    </p>
+  </div>
+
+  <div>
+    <p>
+      <%= f.label :link %>
+      <%= f.text_field :link %>
+    </p>
+  </div>
+  <%= f.submit %>
+<% end %>

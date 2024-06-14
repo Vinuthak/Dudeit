@@ -1,0 +1,17 @@
+<h1>List of Stories</h1>
+
+<table border="1" width="500">
+    <tr>
+      <th>Name</th>
+      <th>Link</th>
+    </tr>
+
+  <tbody>
+    <% for story in @stories do %>
+      <tr>
+          <td><%= story.name %></td>
+          <td><%= story.link %></td>
+        <% end %>  
+      </tr> 
+  </tbody>
+</table>
