@@ -1,4 +1,14 @@
-<%= form_for @story do |f| %>
+<% if @story.errors.any? %>
+<div class="form_errors" >
+  <h3>Errors</h3>
+  <ul>
+    <% @story.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+</div>
+ <% end %> 
+<%= form_for @story, data: {turbo:false} do |f| %>
   <div>
     <p>
     <%= f.label :name %>
