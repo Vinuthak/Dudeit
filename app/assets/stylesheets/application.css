@@ -33,3 +33,12 @@ input {
   padding: 5px;
   margin: 10px 0;
 }
+
+field_with_errors {
+  color: red;
+  background: transparent;
+}
+.field_with_errors input {
+  border: thin solid red;
+}
+.form_errors {color:red}
