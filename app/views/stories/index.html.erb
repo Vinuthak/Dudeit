@@ -4,6 +4,7 @@
     <tr>
       <th>Name</th>
       <th>Link</th>
+      <th>Details</th>
     </tr>
 
   <tbody>
@@ -11,6 +12,7 @@
       <tr>
           <td><%= story.name %></td>
           <td><%= story.link %></td>
+          <td><%= link_to story.name, story_path(story) %></td> 
         <% end %>  
       </tr> 
   </tbody>
