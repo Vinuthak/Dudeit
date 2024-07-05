@@ -1,2 +1,14 @@
+  
+
 <h2>Name of the story: <%= @story.name %></h2>
-<p><%= link_to @story.link, @story.link %></p>
+<p><%= link_to @story.link, @story.link %></p><br>
+
+<div id="vote_form">
+  <%= form_tag(story_votes_path(@story),remote: true) do%>
+    <%= submit_tag 'Vote For It'%>
+  <% end %> 
+</div>
+
+<span id="vote_score">
+    Score:<%= @story.votes.count %>
+</span>
