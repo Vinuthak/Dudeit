@@ -52,7 +52,7 @@ $vote_color: #393;
 }
 
 #vote_form input {
-  padding: 3px px;
+  padding: 3px 5px;
   border: 3px solid $vote_color;
   background-color: #cfc;
   text-decoration: none;
