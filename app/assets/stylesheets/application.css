@@ -26,7 +26,13 @@ input {
   background-color: #fff;
   border: 10px solid #ccc;
   padding: 20px 20px 40px 10px;
+  overflow: hidden;
 }
+
+html #content { 
+  height: 1%;  
+}  
+          
 #notification {
   border: 5px solid #9c9;
   background-color: #cfc;
@@ -67,3 +73,15 @@ $vote_color: #393;
 #vote_form input:hover { 
   background-color: #aea;
 }
+
+#vote_history {
+  padding: 5px;
+  margin: 0;
+  list-style: none;
+  border: 3px solid #ccc;
+  background-color: #eee;
+  float: right;
+  color: #999;
+  font-size: smaller;
+}
+
