@@ -43,4 +43,9 @@ class StoryTest < ActiveSupport::TestCase
     refute s.errors.any?
   end
 
+  test " returns highest/latest voting first" do
+    highest_id = stories(:one).votes.map(&:id).max
+    assert_equal highest_id,stories(:one).votes.latest.first.id
+  end
+
 end
