@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  #get 'votes/create'
-  #get 'stories/index'
-  #get 'stories/new'
+  
   resources :stories do
     resources :votes do
     end
   end
+  
+  resource :session
   
 end
 
