@@ -7,7 +7,8 @@ class CreateUsers < ActiveRecord::Migration[7.1]
 
       t.timestamps
     end
-    add_column :stories,:user_id,:integer
-    add_column :votes,:user_id,:integer
+
+    add_column :stories, :user_id, :integer # which means add column to stories table with the user_ID column of int type
+    add_column :votes, :user_id, :integer
   end
 end
