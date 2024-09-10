@@ -85,3 +85,22 @@ $vote_color: #393;
   font-size: smaller;
 }
 
+#login_logout {
+  float: right;
+  color: #999;
+  font-size: smaller;
+}
+
+#navigation {
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  text-align: center;
+}
+#navigation li {
+  display: inline;
+  padding: 0 5px;
+}
+#navigation li a {
+  color: #572e2e;
+}
