@@ -16,6 +16,8 @@ class SessionsController < ApplicationController
     session[:user_id] = @current_user = nil
     redirect_to stories_path
   end
+
+  before_action :ensure_login, only: [:new, :create]
   
 end
 
